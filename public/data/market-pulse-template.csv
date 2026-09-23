@@ -1,0 +1,6 @@
+date,order_id,customer_id,product,category,province,district,quantity,revenue
+2026-03-12,SO-10001,C-1042,Ceylon Tea Chest,Grocery,Western,Colombo,2,5300
+2026-03-12,SO-10002,C-1188,Aurora Headphones,Electronics,Southern,Galle,1,12400
+2026-03-13,SO-10003,C-1042,Monsoon Cookware,Home,Western,Colombo,1,7800
+2026-03-14,SO-10004,C-2210,Tea Trail Apparel,Lifestyle,Central,Kandy,3,9600
+2026-03-15,SO-10005,C-3001,Harbour Lamp,Home,Northern,Jaffna,1,4200

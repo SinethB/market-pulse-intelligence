@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", ui-serif, Georgia, "Times New Roman", serif;
+
+  --color-bg: #090b0c;
+  --color-background: #090b0c;
+  --color-fg: #e6eeec;
+  --color-foreground: #e6eeec;
+  --color-surface: #121618;
+  --color-card: #121618;
+  --color-surface-2: #181d20;
+  --color-muted: #8b9794;
+  --color-muted-foreground: #8b9794;
+  --color-primary: #7eb8ab;
+  --color-primary-foreground: #0a1210;
+  --color-border: #232a2c;
+  --color-ring: #7eb8ab;
+  --color-accent: #1a2224;
+  --color-accent-foreground: #e6eeec;
+  --color-up: #6fbf9a;
+  --color-down: #d07a6e;
+  --color-warn: #c4a15a;
+  --color-popover: #161b1d;
+  --color-popover-foreground: #e6eeec;
+  --color-secondary: #1a2224;
+  --color-secondary-foreground: #e6eeec;
+  --color-input: #232a2c;
+  --color-destructive: #d07a6e;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius: 12px;
+
+  --shadow-panel: 0 1px 0 rgba(230, 238, 236, 0.04), 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-primary) 35%, transparent);
+    color: var(--color-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

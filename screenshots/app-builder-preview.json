@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Market Pulse",
+      "hasCanvas": false,
+      "bodyTextLen": 2453,
+      "bodyTextHash": "1a6a8ecd6085b2ec9ff1e15cf5981b5cf9e863cb127150c1be30ad1e46702bfb",
+      "bodyTextPrefix": "SALES & MARKET INTELLIGENCE Market Pulse See where products, cus",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Market Pulse",
+      "hasCanvas": false,
+      "bodyTextLen": 2418,
+      "bodyTextHash": "d81e065238377fc7b5bd63ab9a80c61da2923150f0e030924d52616098247676",
+      "bodyTextPrefix": "SALES & MARKET INTELLIGENCE Market Pulse See where products, cus",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

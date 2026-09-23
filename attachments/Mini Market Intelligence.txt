@@ -1,0 +1,202 @@
+Mini Market Intelligence
+
+A small, interactive business intelligence web app using a public/synthetic dataset.
+
+The idea:
+
+"Explore where products, customers and revenue are performing — and identify opportunities."
+
+It would look like a compact version of a real management analytics system.
+
+The webpage
+
+Header
+
+MARKET PULSE
+Sales & Market Intelligence
+
+Then a dashboard:
+
+┌─────────────────────────────────────────────────────────────┐
+│  MARKET PULSE                         2026 YTD ▾            │
+│  Sales & Market Intelligence                                │
+├────────────┬────────────┬────────────┬──────────────────────┤
+│ Revenue    │ Orders     │ Customers  │ Avg. Order Value     │
+│ Rs. 42.8M  │ 8,421      │ 3,184      │ Rs. 5,083           │
+├────────────┴────────────┴────────────┴──────────────────────┤
+│                                                              │
+│  Revenue Trend                    Revenue by Region          │
+│  ╱╲       ╱╲                     ████████████ Western       │
+│ ╱  ╲__╱╲╱  ╲__                  ████████     Central       │
+│                                                              │
+├───────────────────────────────┬──────────────────────────────┤
+│ Product Performance           │ Market Opportunities          │
+│                               │                              │
+│ Product A   █████████  28%    │ ↑ High growth / low share   │
+│ Product B   ███████    21%    │ ↑ Product X                │
+│ Product C   █████      16%    │ ↑ Product Y                │
+│                               │                              │
+└───────────────────────────────┴──────────────────────────────┘
+
+But the important part is the analysis behind the visuals.
+
+Make it interactive
+
+The user can filter:
+
+Year
+
+2024 | 2025 | 2026
+
+Region
+
+All | Western | Central | Southern | Northern
+
+Category
+
+All | Electronics | Home | Lifestyle | ...
+
+The entire dashboard updates.
+
+Add actual business intelligence
+
+Instead of only showing charts, have an Insights section.
+
+For example:
+
+Market signal
+
+Western region contributes 41% of revenue but has declining growth over the last 3 months.
+
+Product opportunity
+
+Category X has 18% revenue growth while representing only 7% of total sales.
+
+Customer signal
+
+Repeat customers generate 2.4× higher average order value than one-time customers.
+
+Risk
+
+Five products account for 46% of category revenue, indicating concentration risk.
+
+These can be calculated dynamically from the dataset.
+
+That makes the project much closer to your actual analytics work without exposing any LankaTiles data.
+
+One feature that would make it stand out
+"What should I look at?"
+
+Have a button:
+
+Generate Insights
+
+The application analyses the currently filtered data and produces 3–5 observations.
+
+For example:
+
+INSIGHT ENGINE
+────────────────────────────────────
+
+↑ GROWTH
+Category A grew 23.4% compared
+with the previous period.
+
+⚠ CONCENTRATION
+Top 10 products contribute 61%
+of total revenue.
+
+◆ OPPORTUNITY
+Region C has the highest growth
+but remains below 10% of revenue.
+
+No LLM is even necessary initially.
+
+You can implement the logic with JavaScript.
+
+And make it geographically interesting
+
+Since you're in Sri Lanka, use a Sri Lankan synthetic/public-style dataset.
+
+Dashboard:
+
+              NORTH
+                ●
+          ┌───────────┐
+          │           │
+          │  SRI      │
+          │  LANKA    │
+          │           │
+          │       ●   │
+          │           │
+          └───────────┘
+             SOUTH
+
+Districts can be clickable.
+
+Click Colombo → dashboard changes to Colombo.
+
+Click Kandy → Kandy.
+
+Click Galle → Galle.
+
+You could even have:
+
+Market penetration
+
+Revenue
+
+Customer density
+
+Growth
+
+as map modes.
+
+That gives the project a much stronger visual identity.
+
+Technology
+
+Keep the architecture simple:
+
+HTML
+CSS
+JavaScript
+     │
+     ├── Dataset
+     │
+     ├── Analytics Engine
+     │
+     ├── Insight Engine
+     │
+     └── Visualization Layer
+
+Libraries can be loaded from CDN:
+
+Chart.js → charts
+Leaflet → map
+
+No backend.
+
+No database.
+
+No API.
+
+Therefore:
+
+GitHub → GitHub Pages → live website
+
+Repository
+market-pulse/
+│
+├── index.html
+├── styles.css
+├── app.js
+├── data/
+│   └── sales-data.csv
+├── assets/
+│   └── sri-lanka.geojson
+└── README.md
+
+And the GitHub Pages URL could be:
+
+https://sinethb.github.io/market-pulse/
